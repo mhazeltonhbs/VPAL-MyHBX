@@ -29,6 +29,10 @@ dataLayer.push({
 |event_data.video_provider|string|Captures the video player used by the visitor for each video.|youTube, bright cove, JW Player, vimeo|||||||
 |event_data.video_title|string|Captures the Name of video content viewed by visitor.|Twitch\_FPS, Age of Empires, Halo|||||||
 
+## Attached Notes
 
-
-
+<p><strong>Platform: harvardonline</strong></p>
+<p><em>TBD if we can just leverage Vimeo integration in GTM rather than have you code this to the dataLayer - please confirm prior to implementing.</em></p>
+<p><span style="font-weight: 400;">Trigger this event when a user has completed a video.</span></p>
+<p><span style="font-weight: 400;">Example page:</span></p>
+<p><a href="https://www.harvardonline.harvard.edu/course/data-privacy-technology"><span style="font-weight: 400;">https://www.harvardonline.harvard.edu/course/data-privacy-technology</span></a><span style="font-weight: 400;">&nbsp;</span><span style="font-weight: 400;">(video is in the top-right)</span></p>
