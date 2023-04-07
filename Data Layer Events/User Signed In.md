@@ -27,6 +27,8 @@ dataLayer.push({
 |user_data.user_id|string|The id of the user currently logged in to the site, if the site offers authentication and the user is authenticated.|123456, abc123|||||||
 |user_data.user_type|string|Captures the type associated with the user \(i.e. guest, registered, prime, etc\).|employee, guest, agent, customer|||||||
 
+## Attached Notes
 
-
-
+<p><strong>Platform: myhbx</strong></p>
+<p>Trigger this event when a user has successfully signed into their account.</p>
+<p>Example page:<br />https://login.myhbx.org/login?service=https%3A%2F%2Fadmin.myhbx.org%2Fsso&amp;PC=DSRY&amp;hbssrc=vpal&amp;_ga=2.173678115.1213328162.1680195742-1854174576.1669999120&amp;bsrc=https%3A%2F%2Fwww.harvardonline.harvard.edu%2F&nbsp;</p>

@@ -1,4 +1,4 @@
-# Course Application Failure
+# Course Application
 
 ### 
 
@@ -7,11 +7,10 @@
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
-  "event": "course_application_error",
-  "detailed_event": "Course Application Failure",
+  "event": "course_application",
+  "detailed_event": "Course Application",
     "event_data": {
-        "course_name": "<course_name>",
-        "error_message": "<error_message>",
+        "course_application_step": "<course_application_step>",
         "name": "<name>"
     }
 });
@@ -21,10 +20,10 @@ dataLayer.push({
 
 |Path|Type|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|event_data.course_name|string|Datasource for Course Name||||||||
-|event_data.error_message|string|Captures the form error code or message associated with form errors.|Credit card declined, Required entries missing, EC3456, EC8976|||||||
+|event_data.course_application_step|string|Datasource for Application Step Name||||||||
 |event_data.name|string|Captures the human-friendly name of the form.|Payment Info, Mailing Address, Payment Address, Contact Us|||||||
 
+## Attached Notes
 
-
-
+<p><strong>Platform: myhbx</strong></p>
+<p>This event fires when the user starts the 'personal information' application flow step. This event should only be fire once per page request. (step2)</p>
