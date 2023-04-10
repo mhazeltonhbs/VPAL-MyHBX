@@ -15,10 +15,12 @@ dataLayer.push({
             {
                 "course_availability": "<course_availability>",
                 "course_certificate_price": "<course_certificate_price>",
+                "course_difficulty": "<course_difficulty>",
                 "course_language": "<course_language>",
                 "course_length": "<course_length>",
                 "course_modality": "<course_modality>",
                 "course_name": "<course_name>",
+                "course_pace": "<course_pace>",
                 "course_platform": "<course_platform>",
                 "course_price": "<course_price>",
                 "course_school": "<course_school>",
@@ -45,10 +47,12 @@ dataLayer.push({
 |ecommerce.creative_slot|string|The name of the promotional creative slot associated with the event.||||||||
 |ecommerce.items[n].course_availability|string|Value for Course Availability. ex. May 11, 2022 – May 10, 2023|May 11, 2022 – May 10, 2023|||||||
 |ecommerce.items[n].course_certificate_price|string|Value for Certificate Price - ex. 1600|1600, 950, 0, 25.00|||||||
+|ecommerce.items[n].course_difficulty|string|Value for Course Difficulty E-commerce. ex 'Introductory'|introductory, intermediate|||||||
 |ecommerce.items[n].course_language|string|Value for Course Language. ex 'English'|english|||||||
 |ecommerce.items[n].course_length|string|Value for Course Length. ex. '8 weeks \| 2-4 hours a week'|8 weeks \| 2-4 hours a week, 4 weeks 1-2 hours a week, 5 weeks long|||||||
 |ecommerce.items[n].course_modality|string|Value for Course Modality - ex. 'Online'|on\_campus, online, online\_hybrid, flex, ...|||||||
 |ecommerce.items[n].course_name|string|Value for Course Name. ex 'Financial Analysis and Valuation for Lawyers'|Financial Analysis and Valuation for Lawyers, Data Privacy and Technology|||||||
+|ecommerce.items[n].course_pace|string|Value for Course Pace. ex. 'Self-Paced'|self-paced, instructor|||||||
 |ecommerce.items[n].course_platform|string|Value for Course Platform. ex. edX'|hbs, edx, ...|||||||
 |ecommerce.items[n].course_price|string|Value for Course Price. ex. '1600'|1600, 945, 125.00|||||||
 |ecommerce.items[n].course_school|string|Value for Course School. ex. 'HKUSTx, Harvard School of Engineering and Applied Sciences'|HKUSTx, HarvardX, CaltechX, Harvard School of Engineering and Applied Sciences|||||||
