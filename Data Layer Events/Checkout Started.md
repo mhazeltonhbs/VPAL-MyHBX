@@ -6,7 +6,6 @@
 ```js
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
-dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
   "event": "begin_checkout",
   "detailed_event": "Checkout Started",
@@ -23,6 +22,7 @@ dataLayer.push({
                 "course_language": "<course_language>",
                 "course_length": "<course_length>",
                 "course_modality": "<course_modality>",
+                "course_name": "<course_name>",
                 "course_pace": "<course_pace>",
                 "course_platform": "<course_platform>",
                 "course_price": "<course_price>",
@@ -40,9 +40,6 @@ dataLayer.push({
             }
         ],
         "value": <value>
-    },
-    "event_data": {
-        "course_name": "<course_name>"
     }
 });
 ```
@@ -61,6 +58,7 @@ dataLayer.push({
 |ecommerce.items[n].course_language|string|Value for Course Language. ex 'English'|english|||||||
 |ecommerce.items[n].course_length|string|Value for Course Length. ex. '8 weeks \| 2-4 hours a week'|8 weeks \| 2-4 hours a week, 4 weeks 1-2 hours a week, 5 weeks long|||||||
 |ecommerce.items[n].course_modality|string|Value for Course Modality - ex. 'Online'|on\_campus, online, online\_hybrid, flex, ...|||||||
+|ecommerce.items[n].course_name|string|course name for items array||||||||
 |ecommerce.items[n].course_pace|string|Value for Course Pace. ex. 'Self-Paced'|self-paced, instructor|||||||
 |ecommerce.items[n].course_platform|string|Value for Course Platform. ex. edX'|hbs, edx, ...|||||||
 |ecommerce.items[n].course_price|string|Value for Course Price. ex. '1600'|1600, 945, 125.00|||||||
@@ -76,7 +74,6 @@ dataLayer.push({
 |ecommerce.items[n].price|number|The monetary price of the item, in units of the specified currency parameter.|9.99|||||||
 |ecommerce.items[n].quantity|integer|Item quantity.|1|||||||
 |ecommerce.value|number|The monetary value of the event.|7.77, 239.55, 659|||||||
-|event_data.course_name|string|Value for Course Name. ex 'Data Science for Business'||||||||
 
 ## Attached Notes
 

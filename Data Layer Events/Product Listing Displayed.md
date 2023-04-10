@@ -16,7 +16,9 @@ dataLayer.push({
             {
                 "affiliation": "<affiliation>",
                 "course_availability": "<course_availability>",
+                "course_certificate_price": "<course_certificate_price>",
                 "course_difficulty": "<course_difficulty>",
+                "course_language": "<course_language>",
                 "course_length": "<course_length>",
                 "course_modality": "<course_modality>",
                 "course_name": "<course_name>",
@@ -50,7 +52,9 @@ dataLayer.push({
 |ecommerce.item_list_name|string|The human-readable name of the item list the item showed up in \(if sent with a view\_item\_list event\). If one is not available, populate with numerical index of which list this is on the page \(1-indexed\). For filter\_by\_group component, use that value.|filter\_by\_group, recommended\_products, recently\_viewed\_products|||||||
 |ecommerce.items[n].affiliation|string|A product affiliation to designate a supplying company or brick and mortar store location.|Google Store|||||||
 |ecommerce.items[n].course_availability|string|Value for Course Availability. ex. May 11, 2022 – May 10, 2023|May 11, 2022 – May 10, 2023|||||||
+|ecommerce.items[n].course_certificate_price|string|Value for Certificate Price - ex. 1600|1600, 950, 0, 25.00|||||||
 |ecommerce.items[n].course_difficulty|string|Value for Course Difficulty E-commerce. ex 'Introductory'|introductory, intermediate|||||||
+|ecommerce.items[n].course_language|string|Value for Course Language. ex 'English'|english|||||||
 |ecommerce.items[n].course_length|string|Value for Course Length. ex. '8 weeks \| 2-4 hours a week'|8 weeks \| 2-4 hours a week, 4 weeks 1-2 hours a week, 5 weeks long|||||||
 |ecommerce.items[n].course_modality|string|Value for Course Modality - ex. 'Online'|on\_campus, online, online\_hybrid, flex, ...|||||||
 |ecommerce.items[n].course_name|string|Value for Course Name. ex 'Financial Analysis and Valuation for Lawyers'|Financial Analysis and Valuation for Lawyers, Data Privacy and Technology|||||||
