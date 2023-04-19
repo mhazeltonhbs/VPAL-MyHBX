@@ -27,7 +27,7 @@ dataLayer.push({
 
 ## Attached Notes
 
-<p><span style="font-weight: 400;"><strong>Platform: harvardonline</strong></span></p>
+<p><span style="font-weight: 400;"><strong>Platform: harvardonline, PLL</strong></span></p>
 <p><span style="font-weight: 400;">This event triggers when someone successfully completes an internal search on the website even if '0' results are returned.</span></p>
 <p><span style="font-weight: 400;">Example URL:</span></p>
 <p><a href="https://www.harvardonline.harvard.edu/course?search_api_fulltext=harvard"><span style="font-weight: 400;">https://www.harvardonline.harvard.edu/course?search_api_fulltext=harvard</span></a><span style="font-weight: 400;">&nbsp;</span></p>
