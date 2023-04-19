@@ -15,7 +15,6 @@ dataLayer.push({
         "items": [
             {
                 "affiliation": "<affiliation>",
-                "course_availability": "<course_availability>",
                 "course_certificate_price": "<course_certificate_price>",
                 "course_difficulty": "<course_difficulty>",
                 "course_language": "<course_language>",
@@ -36,10 +35,14 @@ dataLayer.push({
                 "item_list_name": "<item_list_name>",
                 "item_name": "<item_name>",
                 "price": <price>,
+                "program_dates": "<program_dates>",
                 "promotion_name": "<promotion_name>",
                 "quantity": <quantity>
             }
-        ]
+        ],
+        "items[n]": {
+            "applications_close": "<applications_close>"
+        }
     }
 });
 ```
@@ -51,7 +54,7 @@ dataLayer.push({
 |ecommerce.item_list_id|string|The computer-readable machine name of the list the item showed up in \(if sent with a view\_item\_list event\). Use UUID provided by the component if no more specific ID is available.|12345abcde12345|||||||
 |ecommerce.item_list_name|string|The human-readable name of the item list the item showed up in \(if sent with a view\_item\_list event\). If one is not available, populate with numerical index of which list this is on the page \(1-indexed\). For filter\_by\_group component, use that value.|filter\_by\_group, recommended\_products, recently\_viewed\_products|||||||
 |ecommerce.items[n].affiliation|string|A product affiliation to designate a supplying company or brick and mortar store location.|Google Store|||||||
-|ecommerce.items[n].course_availability|string|Value for Course Availability. ex. May 11, 2022 – May 10, 2023|May 11, 2022 – May 10, 2023|||||||
+|ecommerce.items[n].applications_close|string|Date on which course Applications Close|Jul 10, 2023|||||||
 |ecommerce.items[n].course_certificate_price|string|Value for Certificate Price - ex. 1600|1600, 950, 0, 25.00|||||||
 |ecommerce.items[n].course_difficulty|string|Value for Course Difficulty E-commerce. ex 'Introductory'|introductory, intermediate|||||||
 |ecommerce.items[n].course_language|string|Value for Course Language. ex 'English'|english|||||||
@@ -72,12 +75,13 @@ dataLayer.push({
 |ecommerce.items[n].item_list_name|string|The human-readable name of the item list the item showed up in \(if sent with a view\_item\_list event\). If one is not available, populate with numerical index of which list this is on the page \(1-indexed\). For filter\_by\_group component, use that value.|filter\_by\_group, recommended\_products, recently\_viewed\_products|||||||
 |ecommerce.items[n].item_name|string|Item Name \(context-specific\).|jeggings|||||||
 |ecommerce.items[n].price|number|The monetary price of the item, in units of the specified currency parameter.|9.99|||||||
+|ecommerce.items[n].program_dates|string|Value for Program Dates. ex. May 11, 2022 – May 10, 2023|May 11, 2022 – May 10, 2023|||||||
 |ecommerce.items[n].promotion_name|string|Datasource for Course Promotion Name E-commerce||||||||
 |ecommerce.items[n].quantity|integer|Item quantity.|1|||||||
 
 ## Attached Notes
 
-<p><strong>Platform:harvardonline</strong></p>
+<p><strong>Platform: harvardonline, PLL</strong></p>
 <p>This event should trigger when a user is served a course list and pass details about all of the courses presented in the list.</p>
 <p>Example page:</p>
 <p><a href="https://www.harvardonline.harvard.edu/series/harvard-on-digital">https://www.harvardonline.harvard.edu/series/harvard-on-digital</a></p>
