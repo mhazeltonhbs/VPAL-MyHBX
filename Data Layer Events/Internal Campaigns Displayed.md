@@ -12,7 +12,6 @@ dataLayer.push({
     "ecommerce": {
         "items": [
             {
-                "course_availability": "<course_availability>",
                 "course_certificate_price": "<course_certificate_price>",
                 "course_difficulty": "<course_difficulty>",
                 "course_language": "<course_language>",
@@ -30,6 +29,7 @@ dataLayer.push({
                 "item_id": "<item_id>",
                 "item_name": "<item_name>",
                 "location_id": "<location_id>",
+                "program_dates": "<program_dates>",
                 "quantity": <quantity>
             }
         ],
@@ -43,7 +43,6 @@ dataLayer.push({
 
 |Path|Type|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|ecommerce.items[n].course_availability|string|Value for Course Availability. ex. May 11, 2022 – May 10, 2023|May 11, 2022 – May 10, 2023|||||||
 |ecommerce.items[n].course_certificate_price|string|Value for Certificate Price - ex. 1600|1600, 950, 0, 25.00|||||||
 |ecommerce.items[n].course_difficulty|string|Value for Course Difficulty E-commerce. ex 'Introductory'|introductory, intermediate|||||||
 |ecommerce.items[n].course_language|string|Value for Course Language. ex 'English'|english|||||||
@@ -61,12 +60,13 @@ dataLayer.push({
 |ecommerce.items[n].item_id|string|Item ID \(context-specific\).The product primary ID \(SKU or UPC\)|SKU\_12345|||||||
 |ecommerce.items[n].item_name|string|Item Name \(context-specific\).|jeggings|||||||
 |ecommerce.items[n].location_id|string|Captures a unique ID of a physical location such as a store, banking branch, atm, hotel, office, or other.|155, 65588, 987764448|||||||
+|ecommerce.items[n].program_dates|string|Value for Program Dates. ex. May 11, 2022 – May 10, 2023|May 11, 2022 – May 10, 2023|||||||
 |ecommerce.items[n].quantity|integer|Item quantity.|1|||||||
 |ecommerce.promotion_id|string|Captures the ID associated with internal campaigns. Used for internal campaign impressions and clicks only.|2345, 56789, 9876|||||||
 |ecommerce.promotion_name|string|Captures the name associated with internal campaigns. Used for internal campaign impressions and clicks only.|Trek bikes for kids, REI Spring Sale 2019, Viking Cruise Fall Specials|||||||
 
 ## Attached Notes
 
-<p><strong>Platform: harvardonline</strong></p>
+<p><strong>Platform: harvardonline, PLL (if serving a promotion)</strong></p>
 <p>Capture this when a promotion is loaded on a page. If the promotion is promoting a course or courses pass the items array as well.</p>
-<p>(TBD .. if promotion is for a course we will need to add course attributes similar to other ecommerce events)</p>
+<p>&nbsp;</p>
