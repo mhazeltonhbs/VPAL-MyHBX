@@ -17,4 +17,4 @@ dataLayer.push({
 
 ## Attached Notes
 
-<p><strong>Platform: both</strong></p>
+<p><strong>Platform: myhbx</strong></p>
