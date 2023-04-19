@@ -14,7 +14,6 @@ dataLayer.push({
         "item_list_name": "<item_list_name>",
         "items": [
             {
-                "course_availability": "<course_availability>",
                 "course_certificate_price": "<course_certificate_price>",
                 "course_difficulty": "<course_difficulty>",
                 "course_language": "<course_language>",
@@ -30,9 +29,13 @@ dataLayer.push({
                 "item_category2": "<item_category2>",
                 "item_id": "<item_id>",
                 "item_name": "<item_name>",
-                "price": <price>
+                "price": <price>,
+                "program_dates": "<program_dates>"
             }
-        ]
+        ],
+        "items[n]": {
+            "applications_close": "<applications_close>"
+        }
     }
 });
 ```
@@ -43,7 +46,7 @@ dataLayer.push({
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |ecommerce.item_list_id|string|The computer-readable machine name of the list the item showed up in \(if sent with a view\_item\_list event\). Use UUID provided by the component if no more specific ID is available.|12345abcde12345|||||||
 |ecommerce.item_list_name|string|The human-readable name of the item list the item showed up in \(if sent with a view\_item\_list event\). If one is not available, populate with numerical index of which list this is on the page \(1-indexed\). For filter\_by\_group component, use that value.|filter\_by\_group, recommended\_products, recently\_viewed\_products|||||||
-|ecommerce.items[n].course_availability|string|Value for Course Availability. ex. May 11, 2022 – May 10, 2023|May 11, 2022 – May 10, 2023|||||||
+|ecommerce.items[n].applications_close|string|Date on which course Applications Close|Jul 10, 2023|||||||
 |ecommerce.items[n].course_certificate_price|string|Value for Certificate Price - ex. 1600|1600, 950, 0, 25.00|||||||
 |ecommerce.items[n].course_difficulty|string|Value for Course Difficulty E-commerce. ex 'Introductory'|introductory, intermediate|||||||
 |ecommerce.items[n].course_language|string|Value for Course Language. ex 'English'|english|||||||
@@ -60,10 +63,11 @@ dataLayer.push({
 |ecommerce.items[n].item_id|string|Item ID \(context-specific\).The product primary ID \(SKU or UPC\)|SKU\_12345|||||||
 |ecommerce.items[n].item_name|string|Item Name \(context-specific\).|jeggings|||||||
 |ecommerce.items[n].price|number|The monetary price of the item, in units of the specified currency parameter.|9.99|||||||
+|ecommerce.items[n].program_dates|string|Value for Program Dates. ex. May 11, 2022 – May 10, 2023|May 11, 2022 – May 10, 2023|||||||
 
 ## Attached Notes
 
-<p><strong>Platform:harvardonline</strong></p>
+<p><strong>Platform:harvardonline, PLL</strong></p>
 <p><span style="font-weight: 400;">This event should trigger when a user clicks on a course from a course list.</span></p>
 <p><span style="font-weight: 400;">Example page:</span></p>
 <p><a href="https://www.harvardonline.harvard.edu/series/harvard-on-digital"><span style="font-weight: 400;">https://www.harvardonline.harvard.edu/series/harvard-on-digital</span></a><span style="font-weight: 400;"> </span></p>
