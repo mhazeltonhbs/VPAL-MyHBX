@@ -16,7 +16,6 @@ dataLayer.push({
         "items": [
             {
                 "coupon": "<coupon>",
-                "course_availability": "<course_availability>",
                 "course_certificate_price": "<course_certificate_price>",
                 "course_difficulty": "<course_difficulty>",
                 "course_language": "<course_language>",
@@ -38,9 +37,14 @@ dataLayer.push({
                 "item_list_name": "<item_list_name>",
                 "item_name": "<item_name>",
                 "price": <price>,
+                "program_dates": "<program_dates>",
                 "quantity": <quantity>
             }
         ],
+        "items[n]": {
+            "applications_close": "<applications_close>",
+            "cohort": "<cohort>"
+        },
         "payment_method": "<payment_method>",
         "value": <value>
     }
@@ -51,11 +55,12 @@ dataLayer.push({
 
 |Path|Type|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| ecommerce.items[n].cohort|string|Cohort \(or wave\) a user selects for a course.|July 19, 2023|||||||
 |ecommerce.count_checkout_payment_step_completions|number|Captures the specific chat service line used. \(i.e., the agent\)||||||||
 |ecommerce.coupon|string|Order-level coupon code used for a purchase.|summer\_fun|||||||
 |ecommerce.currency|string|The currency, in 3-letter ISO 4217 format.||||||||
+|ecommerce.items[n].applications_close|string|Date on which course Applications Close|Jul 10, 2023|||||||
 |ecommerce.items[n].coupon|string|Item-level coupon code used for a purchase.|SUMMER\_FUN|||||||
-|ecommerce.items[n].course_availability|string|Value for Course Availability. ex. May 11, 2022 – May 10, 2023|May 11, 2022 – May 10, 2023|||||||
 |ecommerce.items[n].course_certificate_price|string|Value for Certificate Price - ex. 1600|1600, 950, 0, 25.00|||||||
 |ecommerce.items[n].course_difficulty|string|Value for Course Difficulty E-commerce. ex 'Introductory'|introductory, intermediate|||||||
 |ecommerce.items[n].course_language|string|Value for Course Language. ex 'English'|english|||||||
@@ -77,6 +82,7 @@ dataLayer.push({
 |ecommerce.items[n].item_list_name|string|The human-readable name of the item list the item showed up in \(if sent with a view\_item\_list event\). If one is not available, populate with numerical index of which list this is on the page \(1-indexed\). For filter\_by\_group component, use that value.|filter\_by\_group, recommended\_products, recently\_viewed\_products|||||||
 |ecommerce.items[n].item_name|string|Item Name \(context-specific\).|jeggings|||||||
 |ecommerce.items[n].price|number|The monetary price of the item, in units of the specified currency parameter.|9.99|||||||
+|ecommerce.items[n].program_dates|string|Value for Program Dates. ex. May 11, 2022 – May 10, 2023|May 11, 2022 – May 10, 2023|||||||
 |ecommerce.items[n].quantity|integer|Item quantity.|1|||||||
 |ecommerce.payment_method|string|The chosen method of payment.|credit card, gift card, paypal, apple pay|||||||
 |ecommerce.value|number|The monetary value of the event.|7.77, 239.55, 659|||||||
