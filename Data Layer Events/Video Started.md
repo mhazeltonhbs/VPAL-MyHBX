@@ -31,7 +31,7 @@ dataLayer.push({
 
 ## Attached Notes
 
-<p><strong>Platform: harvardonline</strong></p>
+<p><strong>Platform: harvardonline, PLL, VPAL</strong></p>
 <p><em>TBD if we can just leverage Vimeo integration in GTM rather than have you code this to the dataLayer - please confirm prior to implementing.</em></p>
 <p><span style="font-weight: 400;">Trigger this event when a user has started a video. This video 'start' event should only fire once per video per page request.</span></p>
 <p><span style="font-weight: 400;">Example page:</span></p>

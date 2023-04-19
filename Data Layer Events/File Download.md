@@ -27,7 +27,7 @@ dataLayer.push({
 
 ## Attached Notes
 
-<p><span style="font-weight: 400;"><strong>Platform: harvardonline (and myhbx if there are document downloads there)</strong></span></p>
+<p><span style="font-weight: 400;"><strong>Platform: harvardonline, PLL</strong></span></p>
 <p>&nbsp;</p>
 <p><span style="font-weight: 400;">Trigger this event when a user clicks to download a file.</span></p>
 <p><span style="font-weight: 400;">Example page:</span></p>
