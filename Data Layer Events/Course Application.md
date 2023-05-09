@@ -10,8 +10,8 @@ dataLayer.push({
   "event": "course_application",
   "detailed_event": "Course Application",
     "event_data": {
-        "course_application_step": "<course_application_step>",
-        "name": "<name>"
+        "course_application_step": "Step 2",
+        "name": "Personal Information"
     }
 });
 ```
@@ -27,3 +27,5 @@ dataLayer.push({
 
 <p><strong>Platform: myhbx</strong></p>
 <p>This event fires when the user starts the 'personal information' application flow step. This event should only be fire once per page request. (step2)</p>
+<p>Fires on page load: https://account.myhbx.org/MyApplication </p>
+
