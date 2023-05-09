@@ -2,6 +2,12 @@
 
 ### 
 
+## Event Firing Instructions
+
+<p><strong>Platform: myhbx</strong></p>
+<p>This event fires when the course application is successfully submitted. (step3)</p>
+
+
 ## Javascript Code
 ```js
 window.dataLayer = window.dataLayer || [];
@@ -25,7 +31,3 @@ dataLayer.push({
 |event_data.course_application_step|string|Datasource for Application Step Name. Static value.| Step 3|||||||
 |event_data.name|string|Captures the human-friendly name of the form. Static value.|Application Submission|||||||
 
-## Attached Notes
-
-<p><strong>Platform: myhbx</strong></p>
-<p>This event fires when the course application is successfully submitted. (step3)</p>
