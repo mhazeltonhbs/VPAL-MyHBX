@@ -10,7 +10,9 @@ dataLayer.push({
   "event": "course_application_select_cohort",
   "detailed_event": "Course Application - Select Cohort",
     "event_data": {
-        "user_cohort": "<user_cohort>"
+        "user_cohort": "<user_cohort>",
+        "course_application_step": "<course_application_step>",
+        "name": "<name>"
     }
 });
 ```
