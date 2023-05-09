@@ -2,6 +2,12 @@
 
 ### 
 
+## Event Firing Instructions
+
+<p><strong>Platform: myhbx</strong></p>
+<p>This event should fire when the user creates an account (just account creation, not validation step)</p>
+<p>Fire on this page: https://account.myhbx.org/SignUpConfirmation </p>
+
 ## Javascript Code
 ```js
 window.dataLayer = window.dataLayer || [];
@@ -27,9 +33,5 @@ dataLayer.push({
 |user_data.user_id|string|The id of the user currently logged in to the site, if the site offers authentication and the user is authenticated.|123456, abc123|||||||
 |user_data.user_type|string|Captures the type associated with the user \(i.e. guest, registered, prime, etc\).|employee, guest, agent, customer|||||||
 
-## Attached Notes
 
-<p><strong>Platform: myhbx</strong></p>
-<p>This event should fire when the user creates an account (just account creation, not validation step)</p>
-<p>Fire on this page: https://account.myhbx.org/SignUpConfirmation </p>
 
