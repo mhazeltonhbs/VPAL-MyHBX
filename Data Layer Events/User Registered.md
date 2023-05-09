@@ -31,3 +31,5 @@ dataLayer.push({
 
 <p><strong>Platform: myhbx</strong></p>
 <p>This event should fire when the user creates an account (just account creation, not validation step)</p>
+<p>Fire on this page: https://account.myhbx.org/SignUpConfirmation </p>
+
