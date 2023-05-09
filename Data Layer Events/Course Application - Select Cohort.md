@@ -25,3 +25,5 @@ dataLayer.push({
 
 <p><strong>Platform: myhbx</strong></p>
 <p>This event fires when a a user selects and suscessfully submits a 'cohort' (date) in the course application flow. (step1)</p>
+<p>Fires on: https://account.myhbx.org/SelectWave</p>
+
