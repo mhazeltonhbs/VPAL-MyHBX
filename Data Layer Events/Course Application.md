@@ -2,6 +2,12 @@
 
 ### 
 
+## Event Firing Instructions
+
+<p><strong>Platform: myhbx</strong></p>
+<p>This event fires when the user starts the 'personal information' application flow step. This event should only be fire once per page request. (step2)</p>
+<p>Fires on page load: https://account.myhbx.org/MyApplication </p>
+
 ## Javascript Code
 ```js
 window.dataLayer = window.dataLayer || [];
@@ -25,9 +31,5 @@ dataLayer.push({
 |event_data.course_application_step|string|Datasource for Application Step Name. Static Value.|Step 2|||||||
 |event_data.name|string|Captures the human-friendly name of the form. Static Value.|Personal Information|||||||
 
-## Attached Notes
 
-<p><strong>Platform: myhbx</strong></p>
-<p>This event fires when the user starts the 'personal information' application flow step. This event should only be fire once per page request. (step2)</p>
-<p>Fires on page load: https://account.myhbx.org/MyApplication </p>
 
