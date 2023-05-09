@@ -2,6 +2,10 @@
 
 ### 
 
+## Event Firing Instructions
+
+<p>Fires on Application Submission. Note that application submission will have 2 events fire (Product Added to Cart and Course Application Complete).</p>
+
 ## Javascript Code
 ```js
 window.dataLayer = window.dataLayer || [];
@@ -31,6 +35,7 @@ dataLayer.push({
 });
 ```
 
+
 ## Variable Definitions
 
 |Path|Type|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
@@ -49,6 +54,4 @@ dataLayer.push({
 |ecommerce.items[n].quantity|integer|Item quantity. Static value, will always be 1. |1|||||||
 |ecommerce.value|number|Cost of course. Dynamic value. |1750|||||||
 
-## Attached Notes
 
-<p>Fires on Application Submission. Note that application submission will have 2 events fire (Product Added to Cart and Course Application Complete).</p>
