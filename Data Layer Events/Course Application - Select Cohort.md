@@ -2,6 +2,13 @@
 
 ### 
 
+## Event Firing Instructions
+
+<p><strong>Platform: myhbx</strong></p>
+<p>This event fires when a a user selects and suscessfully submits a 'cohort' (date) in the course application flow. (step1)</p>
+<p>Fires on: https://account.myhbx.org/SelectWave</p>
+
+
 ## Javascript Code
 ```js
 window.dataLayer = window.dataLayer || [];
@@ -25,9 +32,4 @@ dataLayer.push({
 |event_data.course_application_step|string|Datasource for Application Step Name. Static value. |Step 1|||||||
 |event_data.name|string|Captures the human-friendly name of the form. Static value.|Select Wave|||||||
 
-## Attached Notes
-
-<p><strong>Platform: myhbx</strong></p>
-<p>This event fires when a a user selects and suscessfully submits a 'cohort' (date) in the course application flow. (step1)</p>
-<p>Fires on: https://account.myhbx.org/SelectWave</p>
 
