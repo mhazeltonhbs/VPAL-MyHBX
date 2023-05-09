@@ -20,8 +20,8 @@ dataLayer.push({
 
 |Path|Type|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|event_data.course_application_step|string|Datasource for Application Step Name||||||||
-|event_data.name|string|Captures the human-friendly name of the form.|Payment Info, Mailing Address, Payment Address, Contact Us|||||||
+|event_data.course_application_step|string|Datasource for Application Step Name. Static Value.|Step 2|||||||
+|event_data.name|string|Captures the human-friendly name of the form. Static Value.|Personal Information|||||||
 
 ## Attached Notes
 
