@@ -5,7 +5,7 @@
 ## Event Firing Instructions
 
 <p><strong>Platform: myhbx</strong></p>
-<p>Fire when an error message is displayed on MyHBX. This should be any 'friendly message' to the user.</p>
+<p>Fire when an error message is displayed on MyHBX, such as form validation errors. This should be any 'friendly message' to the user.</p>
 
 ## Javascript Code
 ```js
