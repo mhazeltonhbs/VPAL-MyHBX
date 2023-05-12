@@ -20,7 +20,7 @@ dataLayer.push({
     },
     "user_data": {
         "user_id": "<user_id>",
-        "user_type": ""
+        "user_type": "Customer"
     }
 });
 ```
@@ -31,7 +31,7 @@ dataLayer.push({
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |event_data.method|string|Left blank for future use.||||||||
 |user_data.user_id|string|The id of the user currently logged in to the site, if the site offers authentication and the user is authenticated.|123456, abc123|||||||
-|user_data.user_type|string|Left blank for future use.||||||||
+|user_data.user_type|string|Captures the type associated with the user. Static value.|Customer|||||||
 
 
 
