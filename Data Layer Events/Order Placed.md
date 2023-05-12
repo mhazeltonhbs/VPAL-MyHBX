@@ -21,7 +21,7 @@ dataLayer.push({
             {
                 "index": 0,
                 "item_brand": "<item_brand>",
-                "item_category": "Course",
+                "item_category": "<item_category>",
                 "item_category2": "MyHBX Platform",
                 "item_id": "<item_id>",
                 "item_list_id": "",
@@ -46,7 +46,7 @@ dataLayer.push({
 |ecommerce.currency|string|The currency, in 3-letter ISO 4217 format. Static value (unless users can use currencies other than USD, then pull dynamically). |USD|||||||
 |ecommerce.items[n].index|number|The index/position of the item in a list. Static value since we can only add 1 product at a time. |0|||||||
 |ecommerce.items[n].item_brand|string|Based on who owns the course (e.g. Harvard Online or HBS Online). Dynamic value.|Harvard Online or HBS Online|||||||
-|ecommerce.items[n].item_category|string|Item Category. Static value. |Course|||||||
+|ecommerce.items[n].item_category|string|Item Category of the course. Most courses would have the value of "Certificate" with the exception of the CORe or CLIMB program, the value for these would be "Credential". Dynamic value. |Certificate or Credential|||||||
 |ecommerce.items[n].item_category2|string|The second category of an item. Static value.|MyHBX Platform|||||||
 |ecommerce.items[n].item_id|string|Item ID. Uses the course code. Dynamic value. |NEGO|||||||
 |ecommerce.items[n].item_list_id|string|Left blank for future use.||||||||
