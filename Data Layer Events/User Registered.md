@@ -16,11 +16,11 @@ dataLayer.push({
   "event": "sign_up",
   "detailed_event": "User Registered",
     "event_data": {
-        "method": "<method>"
+        "method": ""
     },
     "user_data": {
         "user_id": "<user_id>",
-        "user_type": "<user_type>"
+        "user_type": ""
     }
 });
 ```
@@ -29,9 +29,9 @@ dataLayer.push({
 
 |Path|Type|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|event_data.method|string|Captures the website method \(i.e. search, top nav\) used to find each product.|email, facebook, twitter|||||||
+|event_data.method|string|Left blank for future use.||||||||
 |user_data.user_id|string|The id of the user currently logged in to the site, if the site offers authentication and the user is authenticated.|123456, abc123|||||||
-|user_data.user_type|string|Captures the type associated with the user \(i.e. guest, registered, prime, etc\).|employee, guest, agent, customer|||||||
+|user_data.user_type|string|Left blank for future use.||||||||
 
 
 
