@@ -20,7 +20,7 @@ dataLayer.push({
     },
     "user_data": {
         "user_id": "<user_id>",
-        "user_type": "Customer"
+        "user_type": ""
     }
 });
 ```
@@ -31,6 +31,6 @@ dataLayer.push({
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |page_data.user_login_state|string|Captures the current sign in status for the user - static value for MyHBX|signed_in|||||||
 |user_data.user_id|string|The id of the user currently logged in to the site, if the site offers authentication and the user is authenticated. Dynamic value. |123456, abc123|||||||
-|user_data.user_type|string|Captures the type associated with the user. Static value.|Customer|||||||
+|user_data.user_type|string|Left blank for future use.||||||||
 
 
