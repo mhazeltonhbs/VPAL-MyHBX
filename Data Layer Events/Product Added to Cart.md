@@ -4,7 +4,8 @@
 
 ## Event Firing Instructions
 
-<p>Fires on Application Submission. Note that application submission will have 2 events fire (Product Added to Cart and Course Application Complete).</p>
+<p>Fires on Application Submission.</p>
+<p>Note that application submission will have 2 events fire (Product Added to Cart and Course Application Complete).</p>
 
 ## Javascript Code
 ```js
