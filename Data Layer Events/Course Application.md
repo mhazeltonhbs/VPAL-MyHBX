@@ -7,6 +7,7 @@
 <p><strong>Platform: myhbx</strong></p>
 <p>This event fires when the user starts the 'personal information' application flow step. This event should only be fire once per page request. (step2)</p>
 <p>Fires on page load: https://account.myhbx.org/MyApplication </p>
+<p>Note that there will be 2 events that fire on this page (Item Viewed and Course Application).</p>
 
 ## Javascript Code
 ```js
