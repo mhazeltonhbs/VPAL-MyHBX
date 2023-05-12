@@ -4,7 +4,11 @@
 
 ## Event Firing Instructions
 
-<p>Fires on when the application is started and the user lands on this page: https://account.myhbx.org/MyApplication. Note that there will be 2 events that fire on this page (Item Viewed and Course Application).</p>
+<p>Fires on when the application is started.</p>
+  
+<p>Fires on page load: https://account.myhbx.org/MyApplication</p>
+
+<p>Note that there will be 2 events that fire on this page (Item Viewed and Course Application).</p>
 
 ## Javascript Code
 ```js
