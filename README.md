@@ -1,4 +1,4 @@
-# VPAL
+# MyHBX Platform
 
 <h1 id="overview"><strong>Overview</strong></h1>
 <p>This repository contains the necessary specifications to add additional data layers for use with Google Tag Manager and Google Analytics 4.</p>
