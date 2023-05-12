@@ -7,6 +7,8 @@
 <p><strong>Platform: myhbx</strong></p>
 <p>This event fires when the course application is successfully submitted. (step3)</p>
 
+<p>Note that application submission will have 2 events fire (Product Added to Cart and Course Application Complete).</p>
+
 
 ## Javascript Code
 ```js
